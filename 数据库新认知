@@ -1,7 +1,7 @@
 1.	case when 条件a then 结果a when 条件b then 结果b else 结果c end
 	CASE sex WHEN '1' THEN '男' WHEN '2' THEN '女' ELSE '其他' END 
 
-2.	某个账号下面拥有指定的一个数据库，针对任何客户端都可以连接，若针对多个数据库可修改参数账号密码不变，最后清一下权限缓存
+2.	某个账号下面拥有指定的一个数据库，针对任何客户端都可以连接，若针对多个数据库可修改参数账号密码不	变，最后清一下权限缓存
 	GRANT ALL PRIVILEGES ON 数据库名.* TO 账号@"%" IDENTIFIED BY '密码' WITH GRANT OPTION;
 	FLUSH PRIVILEGES; 
 
